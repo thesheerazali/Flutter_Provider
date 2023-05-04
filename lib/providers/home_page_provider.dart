@@ -12,6 +12,7 @@ class HomePageProvider with ChangeNotifier {
     } else {
       isEligible = false;
       eligiblityMessage = "You are Not Eligile..!";
+      notifyListeners();
     }
   }
 }
